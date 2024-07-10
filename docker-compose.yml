@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "3001:3001"
+  post-service:
+    build: ./post-service
+    ports:
+      - "3002:3002"
+  comment-service:
+    build: ./comment-service
+    ports:
+      - "3003:3003"
